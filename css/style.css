@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #faf9f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: #2c2c2c;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
+    margin: 0 0 3rem 0;
+    text-align: center;
+}
+
+#QuotesCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Quote cards style */
+.quoteCard {
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quoteCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Author paragraph inside the quote card */
+.quoteCard p {
+    font-size: 1.1rem;
+    margin: 1rem 0 0 0;
+    opacity: 0.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    align-self: flex-end;
+    font-style: italic;
+}
+
+/* Button style */
+#quoteButton {
+    background-color: #2a5298;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#quoteButton:hover {
+    background-color: #1e3c72;
+}
+#quoteButton:active {
+    transform: scale(0.96);
+}
+
+/* 10 distinct pastel colors and 6 different fonts applied using nth-child */
+.quoteCard:nth-of-type(10n + 1) { background-color: #fdf2f8; font-family: 'Playfair Display', serif; }
+.quoteCard:nth-of-type(10n + 2) { background-color: #eff6ff; font-family: 'Lora', serif; }
+.quoteCard:nth-of-type(10n + 3) { background-color: #f0fdf4; font-family: 'Caveat', cursive; font-size: 2rem; }
+.quoteCard:nth-of-type(10n + 4) { background-color: #fefce8; font-family: 'Dancing Script', cursive; font-size: 2rem; }
+.quoteCard:nth-of-type(10n + 5) { background-color: #faf5ff; font-family: 'Quintessential', cursive; }
+.quoteCard:nth-of-type(10n + 6) { background-color: #fff7ed; font-family: 'Cormorant Garamond', serif; }
+.quoteCard:nth-of-type(10n + 7) { background-color: #f8fafc; font-family: 'Playfair Display', serif; }
+.quoteCard:nth-of-type(10n + 8) { background-color: #ecfdf5; font-family: 'Caveat', cursive; font-size: 2rem; }
+.quoteCard:nth-of-type(10n + 9) { background-color: #fdf4ff; font-family: 'Lora', serif; }
+.quoteCard:nth-of-type(10n + 10) { background-color: #f0f9ff; font-family: 'Dancing Script', cursive; font-size: 2rem; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #QuotesCard {
+        grid-template-columns: 1fr;
+    }
+    #quoteButton {
+        grid-column: span 1;
+    }
+}
