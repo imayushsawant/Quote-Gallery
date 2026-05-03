@@ -1,5 +1,7 @@
 # Quote Gallery
 
+**[Live Demo](https://imayushsawant.github.io/Quote-Gallery/)**
+
 A classy, Pinterest-inspired gallery of curated quotes built with vanilla HTML, CSS, and JavaScript. 
 
 This simple web application dynamically fetches motivational and insightful quotes using an external API. It beautifully presents the data utilizing modern CSS techniques (CSS Grid, flexbox) and multiple elegant Google Fonts integrated directly into the stylesheet. 
