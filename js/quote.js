@@ -33,7 +33,6 @@ async function main() {
       cardContainer.appendChild(contentDiv)
     });
   }
-  createQuotes()
 
   quoteButton.addEventListener('click', async () => {
     page++
